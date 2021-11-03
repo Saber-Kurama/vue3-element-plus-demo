@@ -32,6 +32,9 @@
       ];
       // ref 的方法 
       // 重新刷新
+      // 同样 也可以用 分页 和 table 一起做 用 hook 的方式
+      // 1. 分页的方法会触发 请求(请求参数 会带上 params 和 query )
+      // 问题是query 是怎么来的。 一个是 props 传递过来 ？
 </script>
 
 <template>
