@@ -2,6 +2,7 @@
 import { reactive, watch } from 'vue'
 import Query from './Query.vue';
 import QueryTable from './QueryTable.vue';
+import SaberQueryTable from './QueryTable';
 
 const queryData = reactive({
     name: 'saber'
@@ -28,5 +29,9 @@ watch(() => queryData.name, (newValues) => { console.log(newValues)})
             <el-table-column prop="address" label="Address" />
          </template>
      </query-table>
+     <SaberQueryTable>
+         <div>-----</div>
+     </SaberQueryTable>
+
  </div>
 </template>
